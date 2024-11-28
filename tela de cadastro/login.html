@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de cadastro</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
@@ -21,8 +21,8 @@
             </ul>
         </nav>
     </header>
-    <main></main>
-    <div class="main-cadastro">
+    
+    <main>
         <!--Parte esquerda da tela-->
         <div class="left-cadastro">
             <h1>Faça seu cadastro <br> e nos dê seu Feedback</h1>
@@ -30,7 +30,7 @@
         </div>
         <!--Parte direita da tela-->
         <div class="right-cadastro">
-            <div class="card-cadastro">
+            <form class="card-cadastro">
                 <h1>Cadastre-se</h1>
                 <div class="textfield">
                     <label for="usuário">Usuário</label>
@@ -44,20 +44,51 @@
                     <label for="senha">Senha</label>
                     <input type="password" name="senha" placeholder="Senha">
                 </div>
-                <button class="btn-cadastro">
+                <button class="btn-envio">
                     Cadastrar
                 </button>
-                <h2>Fale aqui sua opiniao do nosso site </h2>
+                <h2>Feedback</h2>
                 <div class="textfield">
                     <label for="Sua opinião">Sua opinião</label>
-                    <input type="text" name="Feedback" placeholder="Feedback">
-                    <button class="btn-envio">
-                        Enviar
-                    </button>
+                    <input id="input-FeedBack" type="text" name="Feedback" placeholder="Feedback">
                 </div>
-            </div>
+                <button class="btn-envio">
+                    Enviar
+                </button>
+            </form>
         </div>
-    </div>
+    </main>
+    <footer>
+        <div class="footer-block">
+            <h1>sobre</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Deserunt tempore expedita 
+                minus optio perferendis sit illum et, aperiam 
+            </p>
+        </div>
+
+        <div class="footer-block">
+            <h1>sobre</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Deserunt tempore expedita 
+                minus optio perferendis sit illum et, aperiam 
+            </p>
+        </div>
+       
+
+        <div class="footer-block">
+            <h1>sobre</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Deserunt tempore expedita 
+                minus optio perferendis sit illum et, aperiam 
+            </p>
+        </div>
+       
+       
+    </footer>
 </body>
 
 </html>

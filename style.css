@@ -528,7 +528,6 @@ nav {
 }
 .carousel.showDetail.showCards .list .item .detail .cards .title{
     font-size: 4em;
-    background-color: pink;
     margin-top: 30px;
     margin-bottom: 10px;
     text-align: center;
@@ -539,8 +538,7 @@ nav {
 }
 
 .carousel.showDetail.showCards .des-details{
-    text-align: center;
-    background-color: red;
+    text-align: left;
     position: absolute;
     display: block;
 }
