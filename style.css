@@ -478,6 +478,9 @@ body{
     }
 }
 /*aparência dos cards*/
+.carousel.showDetail.showCards .list .item .detail .professional-details{
+    block: none;
+}
 .carousel.showDetail .des-details{
     display: none;
 }
