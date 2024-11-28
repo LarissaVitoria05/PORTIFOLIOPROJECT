@@ -1,39 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de cadastro</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <header>
+        <!--Barra de "Tarefas"-->
+        <nav>
+            <a class="logo" href="/">Portifolio Project</a>
+            <!--MEnu com 3 linhas-->          
+            <ul class="nav-list">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/">Login</a></li>
+                <li><a href="/">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main></main>
+
+
+
+
     <div class="main-cadastro">
         <!--Parte esquerda da tela-->
-<div class="left-cadastro">
-    <h1>Faça seu cadastro <br> e nos dê seu Feedback</h1>
-    <img src="img da tela de cadastro/code-snippets-animate.svg" class="cadastro-img" alt="Animacao">
-</div>
-<!--Parte direita da tela-->
-<div class="right-cadastro">
-    <div class="card-cadastro">
-        <h1>Cadastre-se</h1>
-        <div class="textfield">
-            <label for="usuário">Usuário</label>
-            <input type="text" name="usuario" placeholder="Usuário">
+        <div class="left-cadastro">
+            <h1>Faça seu cadastro <br> e nos dê seu Feedback</h1>
+            <img src="img da tela de cadastro/code-snippets-animate.svg" class="cadastro-img" alt="Animacao">
         </div>
-        <div class="textfield">
-            <label for="email ">email</label>
-            <input type="text" name="email" placeholder="email">
+        <!--Parte direita da tela-->
+        <div class="right-cadastro">
+            <div class="card-cadastro">
+                <h1>Cadastre-se</h1>
+                <div class="textfield">
+                    <label for="usuário">Usuário</label>
+                    <input type="text" name="usuario" placeholder="Usuário">
+                </div>
+                <div class="textfield">
+                    <label for="email ">email</label>
+                    <input type="text" name="email" placeholder="email">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Senha">
+                </div>
+                <button class="btn-cadastro">
+                    Cadastrar
+                </button>
+            </div>
         </div>
-        <div class="textfield">
-            <label for="senha" >Senha</label>
-            <input type="password" name="senha" placeholder="Senha">
-        </div>
-        <button class="btn-cadastro">
-            Cadastrar
-        </button>
-    </div>
-</div>
     </div>
 </body>
+
 </html>
