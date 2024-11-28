@@ -149,7 +149,7 @@ body{
 }
 
 /* detalhes vey vivenciass veyyyrr */
-.carousel .list .item .intro .name{
+.carousel .list .item .intro .name {
     font-size: 4em;
     line-height: 1em;
 }
@@ -364,7 +364,6 @@ body{
     opacity: 1;
     pointer-events: auto;
 }
-
 /* cor no fundo em blur */
 .carousel::before{
     width: 450px;
@@ -390,6 +389,12 @@ body{
     opacity: 0;
     pointer-events: none;
 }
+/*name-detail*/
+.name-detail{
+    font-size: 4em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
 /* flechas/arrows dos detalhes */
 .details-arrows{
     position: absolute;
@@ -401,6 +406,8 @@ body{
 }
 .details-arrows .next-details,
 .details-arrows .prev-details{
+    position: fixed;
+    justify-content: space-between;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -413,17 +420,88 @@ body{
     pointer-events: none;
     opacity: 0;
 }
-/* carrossel dos detalhes */
-.carousel.showDetail.showCards .professional-details{
-    animation: FadeDown 0.5s ease-in-out 1 forwards;
+/*animação de ir para os cards e voltar */
+.carousel.showDetail.FadeOutt .list .item .detail .professional-details, 
+.carousel.showDetail.FadeOutt .list .item .detail .name-detail{
+    animation: FadeoutDown 0.5s ease-in-out 1 forwards;
 }
-@keyframes FadeDown{
+.carousel.showDetail.showCards .list .item .details-arrows .prev-details{
+    right: 150%;
+    animation: Fadein 0.36s ease-in-out 1 forwards;
+    pointer-events: auto;
+}
+.carousel.showDetail.showCards .list .item .detail .cards{
+    animation: ScrollTo 0.5s ease-in-out 1 forwards;
+}
+.carousel.showDetail.showCards .list .item .detail .name-detail{
+    display: none;
+}
+
+@keyframes ScrollTo{
+    from{
+        transform: translate(50%, 10%) scale(0.8);;
+        filter: blur(10px);
+        z-index: 9;
+        opacity: 1;
+    }to{
+        opacity: 1;
+    }
+}
+@keyframes FadeoutDown{
     from{}to{
         transform: translateY(50%);
         opacity: 0;
     }
 }
-.carousel.showDetail .list .item .professional-details {
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out;
+@keyframes FadeoutArrow{
+    from{
+        opacity: 1;
+    }to{
+        opacity: 0;
+    }
+}
+@keyframes FadeoutCards{
+    from{
+        opacity: 1;
+    }to{
+        transform: translate(50%, 10%) scale(0.8);;
+        filter: blur(10px);
+        z-index: 9;
+        opacity: 0;
+    }
+}
+@keyframes Fadein{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+/*aparência dos cards*/
+.carousel.showDetail .des-details{
+    display: none;
+}
+.carousel.showDetail.showCards .list .item .detail .cards .title{
+    font-size: 4em;
+    background-color: pink;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.carousel.showDetail.showCards .des-details{
+    position: absolute;
+    display: block;
+}
+
+.carousel.showDetail.showCards .des-details{
+    background-color: red;
+    position: absolute;
+    display: block;
+}
+.carousel.showDetail.showCards .list .item .detail .cards .imagens img{
+    display: none;
+    gap: 21px;
+    border-radius: 15px; 
+    width: 40%; 
+    height: 100px;
+    object-fit: cover; 
 }
