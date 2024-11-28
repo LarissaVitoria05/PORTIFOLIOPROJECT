@@ -478,7 +478,7 @@ body{
     }
 }
 /*aparência dos cards*/
-.carousel.showDetail.showCards .list .item .detail .professional-details{
+.carousel.showDetail.showCards .list .item .detail .professional-details div{
     block: none;
 }
 .carousel.showDetail .des-details{
