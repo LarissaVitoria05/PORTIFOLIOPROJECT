@@ -1,4 +1,10 @@
 /*body */
+*{
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+}
+
 body{
     font-family: Poppins;
     margin: 10;
@@ -28,6 +34,46 @@ body{
     --item5-filter: blur(40px);
     --item5-zindex: 7;
     --item5-opacity: 0;
+}
+
+
+a{
+    color: fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+
+}
+
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: monospace;
+    color: #FFF;
+    background: #23232e;
+    height: 8vh;
+    padding: 10px;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    color: #FFF;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
 }
 
 /* carousel */
@@ -489,6 +535,7 @@ body{
     background-color: pink;
     margin-top: 30px;
     margin-bottom: 10px;
+    text-align: center;
 }
 .carousel.showDetail.showCards .des-details{
     position: absolute;
@@ -496,6 +543,7 @@ body{
 }
 
 .carousel.showDetail.showCards .des-details{
+    text-align: center;
     background-color: red;
     position: absolute;
     display: block;
